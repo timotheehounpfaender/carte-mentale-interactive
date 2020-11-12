@@ -1,25 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr-fr">
+<html lang="en-us">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Carte heuristique interactive</title>
-    <link rel="shortcut icon" href="assets/unity/1/TemplateData/favicon.ico">
-    <link rel="stylesheet" href="assets/unity/1/TemplateData/style.css">
-    <script src="assets/unity/1/TemplateData/UnityProgress.js"></script>
-    <script src="assets/unity/1/Build/UnityLoader.js"></script>
+    <title>Unity WebGL Player | Carte heuristique interactive</title>
+    <script src="Build/UnityLoader.js"></script>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "assets/unity/1/Build/1.json", {onProgress: UnityProgress});
+      UnityLoader.instantiate("unityContainer", "Build/4.json");
     </script>
   </head>
   <body>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Carte heuristique interactive</div>
-      </div>
-    </div>
+    <div id="unityContainer" style="width: 1300px; height: 700px; margin: auto"></div>
   </body>
 </html>
